@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY ECO BOOK</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a45e06ef63e035c64e969bd407a73ba3"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="#">
+          <h1>MY ECO BOOK</h1>
+        </a>
+        <section class="banner">
+          <h2>ECOBOOK은 환경과 공간정보를 더한 온라인 서비스입니다.</h2>
+        </section>
+      </header>
+      <div class="wrap">
+        <main class="main">
+          <section class="map" id="map"></section>
+        </main>
+        <section class="info" id="info">
+          <div class="info-title">
+            <h3>ECO Information</h3>
+          </div>
+          <div class="info-content">
+            <div class="address">
+              <h4 id="address">주소</h4>
+              <p id="address_value"></p>
+            </div>
+            <div class="rainfall">
+              <h4 id="rainfall">강수량</h4>
+              <p id="rainfall_value"></p>
+            </div>
+            <div class="carbon">
+              <h4 id="distance">이동 거리</h4>
+              <p class="distance_value">0m</p>
+              <h4 id="carbon">탄소 배출량</h4>
+              <p class="carbon_value">0kg</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+  <script src="./scripts/script.js" defer></script>
+  </html>
